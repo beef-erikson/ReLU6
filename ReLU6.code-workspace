@@ -1,7 +1,6 @@
 {
 	"folders": [
 		{
-			"includePath": "C:\\Program Files\\NVIDIA\\CUDNN\\v11.8\\include",
 			"path": "."
 		}
 	],
