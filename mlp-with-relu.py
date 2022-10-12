@@ -1,7 +1,4 @@
-from random import seed
-from statistics import mode
 from sklearn.datasets import make_circles
-from numpy import where
 from matplotlib import pyplot
 from sklearn.preprocessing import MinMaxScaler
 from keras.layers import Dense
@@ -20,7 +17,8 @@ trainy, testy = y[:n_train], y[n_train:]
 
 init = RandomUniform(minval=0, maxval=1)
 model = Sequential()
-model.add(Dense(5, input_dim=2, activation='relu', kernel_initializer='he_uniform'))
+model.add(Dense(5, input_dim=2, activation='relu',
+          kernel_initializer='he_uniform'))
 model.add(Dense(5, activation='relu', kernel_initializer='he_uniform'))
 model.add(Dense(5, activation='relu', kernel_initializer='he_uniform'))
 model.add(Dense(5, activation='relu', kernel_initializer='he_uniform'))

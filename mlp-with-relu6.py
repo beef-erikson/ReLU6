@@ -1,7 +1,4 @@
-from random import seed
-from statistics import mode
 from sklearn.datasets import make_circles
-from numpy import where
 from matplotlib import pyplot
 from sklearn.preprocessing import MinMaxScaler
 from keras.layers import Dense
