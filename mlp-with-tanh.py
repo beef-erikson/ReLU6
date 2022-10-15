@@ -11,7 +11,7 @@ X, y = make_circles(n_samples=600, noise=0.1, random_state=1)
 scaler = MinMaxScaler(feature_range=(-1, 1))
 X = scaler.fit_transform(X)
 
-n_train = 1000
+n_train = 500
 trainX, testX = X[:n_train, :], X[n_train:, :]
 trainy, testy = y[:n_train], y[n_train:]
 
